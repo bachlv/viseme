@@ -11,7 +11,6 @@
     const axios = require('axios');
     const bodyParser = require('body-parser');
     const pino = require('express-pino-logger')();
-    const cors = require('cors');
 
     const app = express();
     app.use(bodyParser.urlencoded({ extended: false }));
