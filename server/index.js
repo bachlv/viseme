@@ -16,7 +16,7 @@
   const app = express();
   app.use(bodyParser.urlencoded({ extended: false }));
   app.use(pino);
-  app.use(cors());
+  app.use(cors({ origin: "*" }));
 
   app.get("/api/get-speech-token", async (req, res, next) => {
     res.setHeader("Content-Type", "application/json");
